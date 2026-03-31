@@ -43,15 +43,15 @@ class PyLM : public LM {
   using LMOutput = std::pair<LMStatePtr, float>;
 
   LMStatePtr start(bool startWithNothing) override {
-    PYBIND11_OVERLOAD_PURE(LMStatePtr, LM, start, startWithNothing);
+    PYBIND11_OVERRIDE_PURE(LMStatePtr, LM, start, startWithNothing);
   }
 
   LMOutput score(const LMStatePtr& state, const int usrTokenIdx) override {
-    PYBIND11_OVERLOAD_PURE(LMOutput, LM, score, state, usrTokenIdx);
+    PYBIND11_OVERRIDE_PURE(LMOutput, LM, score, state, usrTokenIdx);
   }
 
   LMOutput finish(const LMStatePtr& state) override {
-    PYBIND11_OVERLOAD_PURE(LMOutput, LM, finish, state);
+    PYBIND11_OVERRIDE_PURE(LMOutput, LM, finish, state);
   }
 };
 
