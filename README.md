@@ -1,3 +1,7 @@
+# This is a fork providing ufal.flashlight-text PyPI package working with modern Pythons.
+
+The original README.md continues for now on.
+
 # Flashlight Text: Fast, Lightweight Utilities for Text
 
 [**Quickstart**](#quickstart)
