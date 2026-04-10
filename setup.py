@@ -212,12 +212,13 @@ def main():
     long_description = (Path(PACKAGE_DIR) / "README.md").read_text()
 
     setup(
-        name="flashlight-text",
+        name="ufal.flashlight-text",
         version=version,
         url="https://github.com/flashlight/text",
-        author="Jacob Kahn",
-        author_email="jacobkahn1@gmail.com",
-        description="Flashlight Text bindings for Python",
+        author           = "Milan Straka",
+        author_email     = "straka@ufal.mff.cuni.cz",
+        description      = "Custom-build wheels of Flashlight Text from https://github.com/flashlight/text",
+        build_dependencies = ["ufal.kenlm"],
         long_description=long_description,
         long_description_content_type="text/markdown",
         packages=find_namespace_packages(
